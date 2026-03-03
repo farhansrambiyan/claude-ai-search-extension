@@ -1,0 +1,26 @@
+:root {
+  --dark: #141413; --light: #faf9f5; --mid-gray: #b0aea5; --light-gray: #e8e6dc;
+  --orange: #d97757; --orange-soft: rgba(217,119,87,0.14); --blue: #6a9bcc;
+  --green: #788c5d; --green-soft: rgba(120,140,93,0.15); --green-border: rgba(120,140,93,0.4);
+  --border: rgba(176,174,165,0.1); --bg: #1a1917;
+  --font-head: 'Poppins', Arial, sans-serif; --font-body: 'Lora', Georgia, serif;
+  --track-w: 48px; --track-h: 26px; --thumb-size: 20px;
+}
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { width: 300px; background: var(--bg); color: var(--light); font-family: var(--font-body); }
+.accent-bar { height: 3px; width: 100%; background: var(--orange); }
+.card { padding: 18px 20px 20px; }
+.top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.ext-name { font-family: var(--font-head); font-size: 14px; font-weight: 700; color: var(--light); letter-spacing: -0.2px; }
+.brand-logo { width: 28px; height: 28px; object-fit: contain; opacity: 1; transition: opacity 0.3s ease; flex-shrink: 0; }
+.divider { height: 1px; background: var(--border); margin-bottom: 16px; }
+.toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.toggle-info { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.toggle-title { font-family: var(--font-head); font-size: 12.5px; font-weight: 600; color: var(--light); }
+.toggle-sub { font-family: var(--font-body); font-size: 10.5px; color: var(--mid-gray); font-style: italic; line-height: 1.4; }
+.toggle { position: relative; display: inline-block; width: var(--track-w); height: var(--track-h); flex-shrink: 0; cursor: pointer; }
+.toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
+.slider { position: absolute; inset: 0; background: #2e2c28; border-radius: var(--track-h); transition: background 0.28s ease; border: 1px solid rgba(255,255,255,0.06); }
+.slider::before { content: ''; position: absolute; width: var(--thumb-size); height: var(--thumb-size); left: 3px; top: 50%; transform: translateY(-50%); background: var(--mid-gray); border-radius: 50%; transition: transform 0.28s cubic-bezier(0.34,1.56,0.64,1), background 0.28s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+.toggle input:checked+.slider { background: var(--orange); border-color: transparent; box-shadow: 0 0 10px rgba(217,119,87,0.4); }
+.toggle input:checked+.slider::before { transform: translateY(-50%) translateX(calc(var(--track-w) - var(--thumb-size) - 6px)); background: #fff; }

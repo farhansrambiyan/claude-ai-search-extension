@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Claude AI Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="card">
+    <div class="top">
+      <span class="ext-name">Claude AI Search</span>
+      <img src="claude-color.png" alt="Claude" class="brand-logo" id="brandLogo" />
+    </div>
+    <div class="divider"></div>
+    <div class="toggle-row">
+      <div class="toggle-info">
+        <span class="toggle-title" id="toggleTitle">Redirect searches to Claude</span>
+        <span class="toggle-sub" id="toggleSub">All address-bar searches open Claude.ai</span>
+      </div>
+      <label class="toggle" for="mainToggle" aria-label="Enable Claude search">
+        <input type="checkbox" id="mainToggle" checked />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
