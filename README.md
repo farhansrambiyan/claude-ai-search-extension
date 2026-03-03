@@ -1,7 +1,5 @@
 # Claude AI Search: Default Search & Context Menu
 
-![Claude AI Search Banner](promo-banner.png)
-
 > Transform your browser into Claude. Search from the address bar, or right-click text to Ask or Summarize instantly!
 
 Tired of copying and pasting text into Claude? Want answers faster? **Claude AI Search** seamlessly connects your browser to Claude.ai, turning your address bar into a direct line to advanced artificial intelligence and bringing AI-powered analysis right to your fingertips.
@@ -43,13 +41,6 @@ Your privacy is our priority. Claude AI Search is incredibly lightweight and sec
 - ✅ All queries are sent directly from your browser to your own signed-in Claude.ai account.
 
 > **Note:** You must have an active, signed-in account on [Claude.ai](https://claude.ai) for this extension to work.
-
----
-
-## 🌐 Open Source
-
-This extension is open source! View the full source code, report issues, or contribute on GitHub:
-👉 **[github.com/farhansrambiyan/claude-ai-search-extension](https://github.com/farhansrambiyan/claude-ai-search-extension)**
 
 ---
 
